@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d2a6c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4c2885;
+  color: white;
+  text-align: center;
+}
+.avatar {
+  border: 10px solid #2a2a72;
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+.card {
+  height: 400px;
+  width: 500px;
+  background-color: #091021;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.fa {
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  font-size: 120px;
+  top: 10px;
+}
+.text {
+  font-size: 20px;
+  position: relative;
+  margin: 145px 12px 0 12px;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 30px;
+  font-family: "Work Sans", sans-serif;
+}
+.author {
+  position: absolute;
+  bottom: 50px;
+  right: 15px;
+  font-size: 23px;
+  font-family: "Rubik", sans-serif;
+  color: rgba(255, 255, 255, 0.05);
+}
+.card:hover {
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+.card:hover .fa1 {
+  background: linear-gradient(45deg, #f7bc01, #d56741);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.card:hover .fa2 {
+  background: linear-gradient(45deg, #27d853, #35c9ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.card:hover .text {
+  color: #d5d5d5;
+}
+.card:hover .a1 {
+  color: #d2902d;
+}
+.card:hover .a2 {
+  color: #39c65c;
+}

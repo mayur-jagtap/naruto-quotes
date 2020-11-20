@@ -2,6 +2,13 @@
   {
     "id": 1,
     "name": "itachi",
-    "quote": "it is foolish to fear what we have yet to see and discover"
+    "quote": "it is foolish to fear what we have yet to see and discover",
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/b/bb/Itachi.png/revision/latest/scale-to-width-down/300?cb=20160125182202"
+  },
+  {
+    "id": 2,
+    "name": "naruto",
+    "quote": "When people are protecting something truly special to them, they truly can become...as strong as they can be.",
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest/scale-to-width-down/300?cb=20170621101134"
   }
 ]
