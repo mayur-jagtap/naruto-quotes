@@ -7,15 +7,13 @@ qoutesForm.addEventListener("submit", (e) => {
   const char_name = search.value;
   console.log(char_name);
 
-  fetch("http://localhost:3002/quotes?character=" + char_name).then(
-    (response) => {
-      response.json().then((data) => {
-        if (data.error) {
-          console.log(data.error);
-        } else {
-          quoteMessage.textContent = data.quote;
-        }
-      });
-    }
-  );
+  fetch("/quotes?character=" + char_name).then((response) => {
+    response.json().then((data) => {
+      if (data.error) {
+        console.log(data.error);
+      } else {
+        quoteMessage.textContent = data.quote;
+      }
+    });
+  });
 });

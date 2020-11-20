@@ -3,6 +3,9 @@ const fs = require("fs");
 const path = require("path");
 const hbs = require("hbs");
 const app = express();
+
+const port = process.env.PORT || 3000;
+
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
@@ -33,6 +36,6 @@ app.get("/quotes", (req, res) => {
   }
 });
 
-app.listen(3002, () => {
-  console.log("Its Running Fine on port 3002");
+app.listen(port, () => {
+  console.log("Its Running Fine on port" + port);
 });
