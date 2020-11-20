@@ -4,7 +4,16 @@ const path = require("path");
 const hbs = require("hbs");
 const app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3002;
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
