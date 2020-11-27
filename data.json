@@ -2,13 +2,24 @@
   {
     "id": 1,
     "name": "itachi",
-    "quote": "it is foolish to fear what we have yet to see and discover",
+    "quote": [
+      "It is foolish to fear what we have yet to see and discover",
+      "Knowledge and awareness are vague, and perhaps better-called illusions.",
+      "Those who turn their hands against their comrades are sure to die a terrible death.",
+      "I am always going to be there for you, even if it is only as an obstacle for you to overcome, you and I have to live together, even if it means hating each other, that...is what big brothers are for...",
+      "Do not judge others simply by their preconceptions, and judgment based on their appearance. You assumed...that I have patience... You all fail to measure your own capacity and my capacity. As a result, you lie here, beaten"
+    ],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/b/bb/Itachi.png/revision/latest/scale-to-width-down/300?cb=20160125182202"
   },
   {
     "id": 2,
     "name": "naruto",
-    "quote": "When people are protecting something truly special to them, they truly can become...as strong as they can be.",
+    "quote": [
+      "When people are protecting something truly special to them, they truly can become...as strong as they can be.",
+      "If you don’t like your destiny, don’t accept it. Instead have the courage to change it the way you want it to be.",
+      "The pain of being alone is completely out of this world, isn’t it? I don’t know why, but I understand your feelings so much, it actually hurts."
+    ],
+
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest/scale-to-width-down/300?cb=20170621101134"
   }
 ]
