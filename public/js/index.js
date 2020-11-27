@@ -1,7 +1,13 @@
 const qoutesForm = document.querySelector("form");
 const main = document.getElementById("main");
 const search = document.querySelector("input");
-const avatar = document.getElementById("avatar");
+const imgs = document.querySelector(".avatar");
+const txt = document.querySelector(".text");
+const author = document.querySelector(".author");
+
+let quotes;
+let currentItem = 0;
+
 getCharacter("itachi");
 
 function getCharacter(char_name) {
@@ -11,6 +17,7 @@ function getCharacter(char_name) {
         console.log(data.error);
       } else {
         createUserCard(data);
+        quotes = data.quote;
       }
     });
   });
@@ -26,13 +33,22 @@ qoutesForm.addEventListener("submit", (e) => {
 });
 
 function createUserCard(user) {
-  const cardHTML = `
-            
-            <div class="card">
-              <div><img class="avatar" src="${user.image_url}" alt="${user.name}" /></div>
-              <i class="fa1 fa fa-quote-right" aria-hidden="true"></i>
-              <div class="text"> &ldquo; ${user.quote} &rdquo;	</div>
-              <div class="author a1">&#150; ${user.name} </div>
-            </div>`;
-  main.innerHTML = cardHTML;
+  imgs.src = user.image_url;
+  imgs.alt = user.name;
+  txt.innerHTML = `&ldquo; ${user.quote[0]} &rdquo;`;
+  author.innerHTML = `&#150; ${user.name}`;
 }
+
+txt.addEventListener("click", function () {
+  $("#txt").fadeOut(function () {
+    currentItem += 1;
+
+    if (currentItem >= quotes.length) {
+      currentItem = 0;
+    }
+
+    txt.innerHTML = `&ldquo; ${quotes[currentItem]} &rdquo;`;
+  });
+
+  $("#txt").fadeIn();
+});
